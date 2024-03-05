@@ -6,11 +6,11 @@
 }
 
 :root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
+    --cor-de-fundo: rgb(26, 25, 25);
+    --vermelho: rgb(90, 30, 30);
     --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --botao-ativo: rgb(14, 12, 34);
+    --botao-inativo: rgba(19, 15, 63, 0.411);
     --texto-de-fundo: rgba(58, 55, 94, 0.3);
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .titulo-principal span {
-    color: var(--verde);
+    color: var(--vermelho);
 }
 
 .botao {
@@ -55,6 +55,11 @@ body {
     border-left: 4px solid var(--botao-ativo);
     border-right: 4px solid var(--botao-ativo);
     border-top: none;
+}
+
+.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--vermelho);
 }
 
 .botao:first-child {
